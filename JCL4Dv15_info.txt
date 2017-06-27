@@ -1,0 +1,85 @@
+JCL_method_JCLinfo	2017/06/27	19:30:31	//JCL_method_JCLinfo	//20170627 yabe	//メソッド名、更新日時、コメント（最初のから行まで）をタブ区切りでデスクトップに書き出す	
+JCL_method_JCLexport	2017/06/27	18:46:29	//JCL_method_JCLexport	// フォルダ選択ダイアログを表示して、JCLメソッドだけを書き出す。	//20170627 yabe wat	
+JCL_file_Extension	2017/06/25	18:38:24	//JCL_file_Extension	//20160823 yabe	//ファイル名から拡張子を取得	
+JCL_file_SelectFolder	2017/06/25	18:38:24	//JCL_file_SelectFolder	//20140602 yabe	//フォルダ選択ダイアログを表示して	//選択されたかどうか・選択されたフォルダのパス・選択されたフォルダの中身を返す	
+JCL_file_StructureName	2017/06/25	18:38:24	//JCL_file_structure_name	//20170625 yabe	//ストラクチャ名を取得	
+JCL_method_info	2017/06/25	18:38:24	//JCL_method_info	//20170625 yabe	//メソッド名、更新日時、コメント（最初のから行まで）をタブ区切りでデスクトップに書き出す	
+JCL_all_export	2016/11/12	16:29:06	//JCL_all_export	//20140810 yabe	//20150902 yabe jiro_dlg対応	// 20161112 wat 郵便番号を除く	
+JCL_lst_Export	2016/08/19	18:33:26	//JCL_lst_Export	//JCL_Export_fromListBox	//zz_Export	//20140921 wat yabe	// 汎用のリストボックス　書き出し	
+JCL_file_CreatedOn	2016/07/28	19:47:14	//JCL_file_CreatedOn	//20160504 wat	//ファイル作成日を取得	
+JCL_Notes	2016/07/28	19:47:14	//JCL_Notes	//20160504 wat	//リリースノートとか、お読みくださいとか、Webエリアで見られるように	
+JCL_lst_SetSelect_byRow	2016/05/14	12:49:16	//JCL_lst_SetSelect_byRow	//20100624 wat	//リストボックスを行番号で選択	//行番号がゼロの場合は何も選択しない、という仕様にした。	
+JCL_lst_Sort	2016/05/13	16:42:21	//JCL_lst_Sort	//20160503 wat yabe	// ソート履歴を実行 XX01_lstXX_makeで実行してください	// 呼び元に「ソート履歴」配列が用意されていることが前提	// ソート履歴は、オンロード時とオンアフターソート時に配列に記録します。	// 配列の順番に　ソートコマンドを実行します。	
+JCL_lst_ColNumber	2016/05/13	16:42:17	//JCL_lst_ColNumber	//20160503 wat yabe	// リストボックスの列名を渡して、現在の列番号を取得　列番号はユーザ操作で変化している可能性有り	// ソートコマンドは列番号で指定するため、このコマンドが必要	
+JCL_lst_Sort_Append	2016/05/13	13:25:40	//JCL_lst_Sort_Append	//20160503 wat yabe	//リストボックスのソート順を、配列に追加	// OnLoadで呼び出す	// デフォルトの並び順を指定、配列にプッシュしておく	
+JCL_lst_Sort_AppendCurrent	2016/05/13	13:25:40	//JCL_lst_Sort_AppendCurrent	//20160503 wat	//ソート順を覚える、ソート履歴に現状を追加	//XX リストボックス メソッドのOn After Sortで実行する	// JCL_lst_Sort_AppendCurrent (->vMR01_lstMR;->vMR01_lstMR_HeaderNames;->vMR01_lstMR_SortOrders)	
+JCL_lst_Sort_HeaderName	2016/05/13	13:25:40	//JCL_lst_Sort_HeaderName	//20160503 wat	// リストボックスの列名を渡して、列番号をエル	// リストボックスの列順（列番号）はユーザ操作によって変化する可能性があるため、列番号ではなく名前を配列に保持	
+JCL_lst_Sort_HeaderReset	2016/05/13	13:25:40	//JCL_lst_Sort_HeaderReset	//20160503 wat yabe	// リストボックスのヘッダーのソートマークをクリア	// OnLoadで呼び出す	
+JCL_lst_SelectAll	2016/04/28	20:05:57	//JCL_lst_SelectAll	//20160426 wat	// リストボックスの行をすべて選択する	
+JCL_prt_PageSetup	2016/03/12	03:06:49	//JCL_prt_PageSetup	//20160311 wat 	//Jiro_prt_PageSetup	//20101212 wat new	//ページセットアップをラップ	
+JCL_method_import	2016/02/29	15:01:44	//JCL_method_import	//20150524 yabe wat v14対応	//20150911 wat コンポーネントで共有	
+JCL_tbl_Create_bySQL	2016/02/29	15:00:57	//JCL_tbl_Create_bySQL	//JCL_tbl_CreateTable	//zz_CreateTable	//20111005 wat	//20121001 wat rename, 20130430 mod	//テーブルを作成	// 20160215 wat プライマリーキーに対応	
+JCL_table_Generate	2016/02/15	21:49:24	//JCL_tbl_import	//JCL_import_tables	//20111005 wat	//20121001 wat rename, 20130429 wat mod	//外部テキストファイルのフィールド定義を読み込んでテーブル作成	//20150826 yabe フォーム作成フラグ追加	
+JCL_tbl_ExportOneSQL	2016/02/15	17:56:29	//JCL_tbl_ExportOneSQL	//20130109 wat	//テーブル定義をテキストファイルに書き出す、アペンド	
+JCL_tbl_Type_SQL	2016/02/15	17:56:29	//JCL_tbl_Type_SQL	//JCL_tbl_GetSQLType	//20130429 wat	//zz_sql_GetTypeStr	//20111005 wat	//タイプ文字列を得る	//20150826 yabe wat NOT NULL 追加	// 20160215 wat  NOT NULLとスペースとコンマは上位のモジュールで編集	
+JCL_method_Generate	2016/01/24	15:11:08	//JCL_method_Generate	//20130318 yabe	//外部テキストファイルのフィールド定義を読み込んでメソッド作成	//メソッドが既にある場合削除しない。	//20150826 yabe フォーム作成フラグ追加	
+JCL_tbl_GenerateSQL	2016/01/24	13:49:02	//JCL_tbl_GenerateSQL	//20130109 wat	//フィールド定義の外部テキストファイルを読んで、SQL文を書き出す	//20150826 yabe フォーム作成フラグ追加	
+JCL_btn_SetEnable_byListCount	2016/01/24	13:13:12	//JCL_btn_SetEnable_byListCount	//20100721 wat new	//リストボックスの表示件数がゼロならボタンをイネイブル	//オンロード時はリストボックスの配列からは件数が取得できない	//クリエイトアレイで作成したIDの配列を与えるとうまく動く	
+JCL_btn_SetEnable_byListSelect	2016/01/24	13:13:12	//JCL_btn_SetEnable_byListSelect	//20100624 wat	//リストボックスで1行だけ選択されていればボタンはイネイブル	
+JCL_btn_SetEnable_byNSelect	2016/01/24	13:13:12	//JCL_btn_SetEnable_byNSelect	//20130401 wat	//リストボックスで1行以上選択されていればボタンはイネイブル	
+JCL_btn_SetVisible	2016/01/24	13:13:12	//JCL_btn_SetVisible	//20100708 wat 	//ボタンを見えなくする、ラッパ	
+JCL_file_Close	2016/01/24	13:13:12	//JCL_file_Close	//20101210 wat new	//ファイルを閉じる	
+JCL_file_Create	2016/01/24	13:13:12	//JCL_file_Create	//20101210 wat new	//ファイルを作成する、ドキュメント名を返す	
+JCL_file_csv_ReadRow	2016/01/24	13:13:12	//JCL_file_csv_ReadRow	//20130718	//JCL_file_tab_ReadRow	//20101220 wat new	//タブ区切りテキストファイルから読み込み、配列に返す	//usage: JCL_file_tab_ReadRow($fileRef;->$ary;$numOfCols)	
+JCL_file_GetDirSeparator	2016/01/24	13:13:12	//JCL_file_GetDirSeparator	//20110920 wat	//OSに合わせたフォルダの区切りを返す	//$1:なし	//$0:OSに合わせたフォルダの区切り	//20090602　矢部　新規作成	
+JCL_file_Logout	2016/01/24	13:13:12	//JCL_file_Logout	//20110527 wat	//ログをファイルに書き出す	//ファイルはデスクトップ、なければ作る	
+JCL_file_MakeFilePath	2016/01/24	13:13:12	//JCL_file_MakeFilePath	//20110222 wat	//ファイルパスを生成	
+JCL_file_OnErrorCall	2016/01/24	13:13:12	//JCL_file_OnErrorCall	//20110627 wat	//ファイル関係のエラー処理	
+JCL_file_OpenForWrite	2016/01/24	13:13:12	//JCL_file_OpenForWrite	//20110527 wat new	//ファイル名を指定してオープン	
+JCL_file_ReadSJIS	2016/01/24	13:13:12	//JCL_file_ReadSJIS	//20130718	//JCL_file_ReadSJIS	//20101210 wat new	//レシーブパケット、ラップ	//20110827 yabe 読み込み停止文字がなくても	//読み込んだブロブのサイズがゼロでなければ、文字を得る	
+JCL_file_SelectFileDlg	2016/01/24	13:13:12	//JCL_file_SelectFileDlg	//20121129 wat	//ファイルオープンダイアログを表示してファイルの中身を返す	
+JCL_file_SQLOut	2016/01/24	13:13:12	//JCL_file_SQLOut	//20130109 wat	//SQL文をファイルに書き出す	//ファイルはデスクトップ、なければ作る	
+JCL_file_WriteCRLF	2016/01/24	13:13:12	//JCL_file_WriteCRLF	//20100721 wat new	//ジロファイル、ファイル参照にＣＲとＬＦを書き出す	
+JCL_file_WriteSJIS	2016/01/24	13:13:12	//JCL_file_WriteSJIS	//20100721 wat new	//テキストファイルに書き出す	
+JCL_file_WriteTab	2016/01/24	13:13:12	//JCL_file_WriteTab	//20100721 wat new	//ファイル参照にタブコードをを書き出す	
+JCL_lst_Count	2016/01/24	13:13:12	//JCL_lst_Count	//JCL_lst_GetCount	//20100721 wat new	//リストボックスの表示行数を取得	//オンロード時はリストボックスの配列からは件数が取得できない	//クリエイトアレイで作成したIDの配列を与えるとうまく動く	
+JCL_lst_Deselect	2016/01/24	13:13:12	//JCL_lst_Deselect	//20100831wat new	//デセレクト専用コマンド	
+JCL_lst_Make_Join	2016/01/24	13:13:12	//JCL_lstMake_Join	//CL01_lstCL_Make_Join	//20130309	//別テーブルから名前をジョイン	
+JCL_lst_Selected_firstRow	2016/01/24	13:13:12	//JCL_lst_Selected_firstRow	//JCL_lst_GetSelected_firstRow	//20100623 wat new	//リストボックスで選択されている最初の行番号を得る	
+JCL_lst_Selected_Long	2016/01/24	13:13:12	//JCL_lst_GetSelected_Long	//20100623 wat new	//汎用メソッド。 リストボックスの行選択を取得して、	//連結されているロングの配列から、最初の選択行のバリューを返す	
+JCL_lst_Selected_Real	2016/01/24	13:13:12	//JCL_lst_GetSelected_Real	//20130130 wat	//汎用メソッド。 リストボックスの行選択を取得して、	//連結されている Real の配列から、最初の選択行のバリューを返す	
+JCL_lst_Selected_Str	2016/01/24	13:13:12	//JCL_lst_GetSelected_Str	//20100628 wat new	//汎用メソッド。 リストボックスの行選択を取得して、	//連結されている文字列の配列から、最初に選択されている行のバリューを返す	
+JCL_lst_SelectedCount	2016/01/24	13:13:12	//JCL_lst_SelectedCount	//JCL_lst_GetSelectedCount	//20100623 wat	//リストボックスに選択されている行が何行あるか返す。汎用メソッド	
+JCL_lst_SelectedValues	2016/01/24	13:13:12	//JCL_lst_GetSelectedValues	//JCL_lst_GetSelectedLongAry	//20130128 wat	//リストボックスの選択されている行の値配列を取得	
+JCL_lst_SetSelect_byLong	2016/01/24	13:13:12	//JCL_lst_SetSelect_byLong	//20100623 wat new	//リストボックスの行を選択する。汎用メソッド	//リストボックスに連結されているロングの配列をキーにする	//20100629 wat mod 行番号を返すように変更	
+JCL_method_export	2016/01/24	13:13:12	//jcl_method_export	//20130429 yabe new	
+JCL_method_GenerateOne	2016/01/24	13:13:12	//JCL_method_GenerateOne	//20130322 yabe	
+JCL_num_GetRGB	2016/01/24	13:13:12	//JCL_num_GetRGB	//20130709	//整数値ＲＧＢからカラー値を返す	
+JCL_obj_SetVisible	2016/01/24	13:13:12	//JCL_obj_SetVisible	//20130530 wat	//オブジェクトを隠す，オブジェクト名を使う	
+JCL_prt_PageBreak	2016/01/24	13:13:12	//JCL_prt_PageBreak	//20100916 wat new	//印刷対象が複数ページにまたがるときのページブレーク	
+JCL_str_Datemark	2016/01/24	13:13:12	//JCL_str_Datemark	//JCL_str_CreateDatemark	//20100701 wat, 20121207 wat replace string	//じろ日付（デイトマーク）の文字列を作成する	
+JCL_str_Datemark_format	2016/01/24	13:13:12	//JCL_str_FormatDatemark	//20101215 wat new	//デイトマークストリングをフォーマットする	
+JCL_str_Extract	2016/01/24	13:13:12	//JCL_str_Extract	//zz_ExtractText	//20110317 wat	//20121001 wat rename	//文字列ブロックを区切り文字で切り出す	
+JCL_str_Keitai_format	2016/01/24	13:13:12	//JCL_str_FormatKeitai 	//20130606 yabe	//携帯番号をフォーマット（ハイフンを入れる）	
+JCL_str_Numbers	2016/01/24	13:13:12	//JCL_str_GetNumber	//20130606 yabe	//文字列から数値だけをとりだす	//全角は半角に変換する	//4Dは文字列比較で半角数字と全角数字を同じとみなすようだ	//4D - ランゲージリファレンス「文字列比較の詳細」には	//"１"="1"はTRUEを返すと記述があるが、ここでは念のため	//全角・半角も判定するコードにした	
+JCL_str_Platform	2016/01/24	13:13:12	//JCL_str_GetPlatform	//20100805 wat new	//マックかウィンかを文字列で返す	
+JCL_str_Week	2016/01/24	13:13:12	//JCL_str_GetWeek	//20130605 wat	//日付から　曜日文字列を返す	
+JCL_tbl_DataType	2016/01/24	13:13:12	//JCL_tbl_DATATYPE	//JCL_tbl_GetDATATYPE	//20130501	//メソッド生成時、テンプレートのDATATYPEを得る	
+JCL_tbl_DeleteByAry	2016/01/24	13:13:12	//JCL_tbl_DeleteByAry	//20130311 wat	//テーブルと検索対象フィールドを与えて、配列の要素で検索して物理削除	
+JCL_tbl_DropAllTables	2016/01/24	13:13:12	//JCL_tbl_DropAllTables	//20111005 wat	//すべてのテーブルを削除	
+JCL_tbl_Export	2016/01/24	13:13:12	//------------------------------------------	//JCL_tbl_export 	//フィールドプロパティをタブ区切りで書き出し	//$1:なし	//$0:なし	//20080807　矢部　新規作成	//20130430　矢部　JCL4Dに追加	//------------------------------------------	
+JCL_tbl_ExportTable	2016/01/24	13:13:12	//JCL_tbl_ExportTable	//20130430 yabe	//一つのテーブルとそのフィールド書き出し	
+JCL_tbl_Fields_withAttr	2016/01/24	13:13:12	//JCL_tbl_Fields_withAttr	//JCL_tbl_GetFields	//20130430 yabe	//フィールド属性を配列で返す	
+JCL_tbl_Fld_GetPtr	2016/01/24	13:13:12	//JCL_tbl_Fld_GetPtr	//JCL_tbl_GetFldPtr	//20130120 wat	//zz_tbl_GetIDFieldPtr	//テーブルポインタからIDフィールドのポインタを獲る	
+JCL_tbl_Index_create	2016/01/24	13:13:12	//JCL_tbl_Index_create	//JCL_tbl_CreatIndex	//20121001 wat rename, 20130430 mod	//テーブルを作成	
+JCL_tbl_InitValue	2016/01/24	13:13:12	//JCL_tbl_InitValue	//JCL_tbl_GetInitValue	//20130507 wat	//メソッド生成時、テンプレートの INITVALUE を得る	
+JCL_tbl_Names_fromFile	2016/01/24	13:13:12	//JCL_tbl_Names_fromFile	//JCL_tbl_GetNames	//20111005 wat	//20121001 wat rename, 20130429 wat mod , 20130430 mod	//20150826 yabe フォーム作成フラグ追加	//テーブル名の配列を得る	
+JCL_tbl_Names_fromStructure	2016/01/24	13:13:12	//JCL_tbl_Names_fromStructure	//JCL_tbl_GetTableNameAry	//20130430 yabe	//テーブル名配列を返す	
+JCL_tbl_Prefix	2016/01/24	13:13:12	//JCL_tbl_Prefix	//JCL_tbl_GetTablePrefix	//20130430 yabe	//フィールド名からテーブル略称を取得	
+JCL_tbl_Ptr_byName	2016/01/24	13:13:12	//JCL_tbl_GetPtr_byName	//20130119 wat	//テーブル名からポインタを返す	
+JCL_tbl_SetInitValue	2016/01/24	13:13:12	//JCL_tbl_SetInitValue	//20130613 yabe	//ゲットフィールドプロパティで取得したタイプによって	//ポインタの指す先を初期化	
+JCL_tbl_Type	2016/01/24	13:13:12	//JCL_tbl_Type	//JCL_tbl_GetType	//20130430 yabe	//タイプ文字列を得る	
+JCL_Add_byInitValues_generate	2016/01/24	13:13:11	//JCL_Add_byInitValues_generate	//20140810 yabe	
+JCL_ary_Next_Long	2016/01/24	13:13:11	//JCL_ary_GetNext_Long	//20140603 wat	//配列で、次のロングバリューを返す	
+JCL_ary_Prev_Long	2016/01/24	13:13:11	//JCL_ary_GetPrev_Long	//2014063 wat	//配列で、前のロングバリューを返す	
+JCL_btn_SetEnable	2016/01/24	13:13:11	//JCL_btn_SetEnable	//20100708 wat	//ボタンをイネイブルにする、ラッパ	//引数のブール値が、真だったらイネイブル	//20150818 yabe 「NABLE BUTTON」「DISABLE BUTTON」は廃止にともない「OBJECT SET ENABLED」に変更	
